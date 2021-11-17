@@ -450,6 +450,7 @@ export class CoreEnforcer {
           case 'boolean':
             eftRes = result ? Effect.Allow : Effect.Indeterminate;
             break;
+          case 'string':
           case 'number':
             if (result === 0) {
               eftRes = Effect.Indeterminate;
